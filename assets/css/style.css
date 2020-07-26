@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 15px;
+}
+
+.box_login {
+    width: 500px;
+    height: 500px;
+    background: #FC80C9;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.box_login .capa {
+    height: 230px;
+    background: url(https://lh3.googleusercontent.com/proxy/OxgQRlIM57-umQNNCfZb7FPTTdipthHsCFrwpYMrOOgNDo7bHZ0omLBqEnFTpWqp_P9xlJ8XSkUabTRhLr45jvwUiHTlXUUoZO5iMU2P3YA11uX-bkZMR9zyKcKvESd1GLE3Pv9v5qrmoqqqc6FkUKo8WzVjDTAW5airq4QxehYofg94mrORbUJCqjoSge7uQns3l_xVNhPxfcpWeRDsYmqP7ZYA0SU);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 24px;
+    color: #FFF;
+    text-align: left;
+    margin: 15px 0px 20px 15px;
+    font-weight: 500;
+}
+
+form input {
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form .btn-login {
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+    background: #FCD453;
+    color: #FFF;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.msg_error {
+    color: red;
+    display: flex;
+    justify-content: center;
+}

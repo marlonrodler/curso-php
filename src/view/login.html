@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://localhost/curso-php/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="box_login">
+        <div class="capa">
+        </div>
+
+        <h1>Faça seu Login</h1>
+
+        <form method="POST" action="http://localhost/curso-php/login/check">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Senha">
+
+            <button class="btn-login">LOGAR</button>
+
+            {% if error != '' %}
+                <span class="msg_error"><i class="fa fa-exclamation-triangle" aria-hidden="true"
+                        style="font-size: 16px; color: red; padding-right: 5px;"></i>
+                    <p>Tentativa Inválida</p>
+                </span>
+            {% endif %}
+        </form>
+    </div>
+</body>
+
+</html>
